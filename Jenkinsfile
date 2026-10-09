@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'  
         DOCKER_IMAGE = 'cithit/tuckert4'                               //<-----change this to your MiamiID!
-        IMAGE_TAG = "build-${BUILD_NUMBER}"
+        IMAGE_TAG = "lab3-4-build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/tuckert4-oss/225-lab3-4.git' //<-----change this to match this new repository!
         KUBECONFIG = credentials('tuckert4')                           //<-----change this to match your kubernetes credentials (MiamiID-225)!  1 More change on line 63!
     }
